@@ -82,7 +82,7 @@ and open the template in the editor.
 
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '409293839234868',
+          appId      : 'XXXXXXXXXXXXXX',
           xfbml      : true,
           version    : 'v2.1'
         });
@@ -167,10 +167,10 @@ and open the template in the editor.
 				FB.getLoginStatus(function(response) {
 				  if (response.status === 'connected') {
 					//alert('Logged in.');
-					//var redirect_uri= 'http://www.facebook.com/dialog/send?app_id=736166379752452&link=http://gustavoadolfomonroy.com&redirect_uri=http://gustavoadolfomonroy.com/';
+					//var redirect_uri= 'http://www.facebook.com/dialog/send?app_id=XXXXXXXX&link=http://gustavoadolfomonroy.com&redirect_uri=http://gustavoadolfomonroy.com/';
                                 FB.ui({
                                           method: 'send',
-                                          to:'703341669706655',
+                                          to:'XXXXXXXXXXXXXXX',  // id of user
                                           message: "Some Kind of test ",
                                           //app_id:736166379752452,
                                           link: 'http://google.com/',
@@ -185,10 +185,10 @@ and open the template in the editor.
 					function(response){
 					//alert("Logged In Succesfully");
 					
-					//var redirect_uri= 'http://www.facebook.com/dialog/send?app_id=736166379752452&link=http://gustavoadolfomonroy.com&redirect_uri=http://gustavoadolfomonroy.com/';
+					//var redirect_uri= 'http://www.facebook.com/dialog/send?app_id=XXXXXXXXX&link=http://gustavoadolfomonroy.com&redirect_uri=http://gustavoadolfomonroy.com/';
                                             FB.ui({
                                               method: 'send',
-                                              //app_id:736166379752452,
+                                              //app_id:XXXXXXXXXXXXXXXX,
                                               link: 'http://google.com/',
                                               display: 'iframe',
                                               redirect_uri:redirect_uri,
